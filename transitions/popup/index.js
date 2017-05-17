@@ -1,4 +1,5 @@
 require("./main.css");
+
 var Vue = require("vue");
 
 var app = new Vue({
@@ -6,5 +7,13 @@ var app = new Vue({
     data:{
         message: "hello.",
         show: false
+    },
+    methods:{
+        clickedOutside: function () {
+            this.show = false;
+        }
+    },
+    directives: {
+        'click-outside': require("./click-outside-directive")
     }
 });

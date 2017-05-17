@@ -114,8 +114,7 @@ a{
 
 .dropdown-enter, .dropdown-leave-active {
     opacity: 0;
-    transform: translate3d(0, 20%, 0);
 }
 .dropdown-enter-active, .dropdown-leave-active {
-    transition: opacity .5s cubic-bezier(0.4, 0, 0, 1.5);
+    transition: opacity .5s;
 }
