@@ -1,0 +1,20 @@
+{
+  "name": "vue-demos",
+  "version": "1.0.0",
+  "description": "a collection of simple demos of vue",
+  "main": "index.js",
+  "keywords": [
+    "demo",
+    "vue",
+    "webpack"
+  ],
+  "author": "axiu",
+  "license": "MIT",
+  "dependencies": {
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "style-loader": "^0.17.0",
+    "vue": "^2.3.3",
+    "webpack": "^2.5.1"
+  }
+}

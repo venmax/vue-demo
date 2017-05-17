@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹出层</title>
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div id="app">
+    <div id="header">
+        <a id="logo" href="/">
+            <span>Demo</span>
+        </a>
+        <ul id="nav">
+            <li><a href="#" class="nav-link">API</a></li>
+            <li><a href="#" class="nav-link">Demo</a></li>
+            <li class="nav-dropdown-container">
+                <a class="nav-link" @click="show = !show">社区</a><span class="arrow"></span>
+                <transition name="dropdown">
+                    <ul v-if="show" class="nav-dropdown">
+                        <li><a href="#" class="nav-link">GitHub</a></li>
+                        <li><a href="#" class="nav-link">论坛</a></li>
+                        <li><a href="#" class="nav-link">聊天室</a></li>
+                        <li><a href="#" class="nav-link">Twitter</a></li>
+                        <li><a href="#" class="nav-link">工作</a></li>
+                    </ul>
+                </transition>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="bundle.js"></script>
+</body>
+</html>
