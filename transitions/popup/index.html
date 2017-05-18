@@ -7,6 +7,11 @@
 </head>
 <body>
 <div id="app">
+    <transition
+            appear
+            appear-class="custom-appear"
+            appear-active-class="custom-appear-active"
+    >
     <div id="header">
         <a id="logo" href="/">
             <span>Demo</span>
@@ -28,6 +33,7 @@
             </li>
         </ul>
     </div>
+    </transition>
 </div>
 <script src="bundle.js"></script>
 </body>
