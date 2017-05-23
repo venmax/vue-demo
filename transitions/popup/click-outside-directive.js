@@ -1,7 +1,7 @@
 var Vue = require('vue');
 
 // Then create your Vue.directive as a variable:
-var clickOutsideDirective = Vue.directive('click-outside', {
+var clickOutsideDirective = {
     bind: function (el, binding, vNode) {
         // Provided expression must evaluate to a function.
         if (typeof binding.value !== 'function') {
@@ -28,6 +28,6 @@ var clickOutsideDirective = Vue.directive('click-outside', {
         document.removeEventListener('click', el.__vueClickOutside__);
         el.__vueClickOutside__ = null
     }
-});
+};
 
 module.exports = clickOutsideDirective;
